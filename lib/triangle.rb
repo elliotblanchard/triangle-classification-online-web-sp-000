@@ -1,3 +1,5 @@
+require 'pry'
+
 class Triangle
   attr_accessor :side1, :side2, :side3
 
@@ -12,6 +14,8 @@ class Triangle
       :equilateral
     elsif side1 == side2 || side2 == side3 || side1 == side3
       :isosceles
+    else
+      binding.pry
     end
   end
 
